@@ -95,6 +95,7 @@ namespace Tennis
         }
         private static bool IsAdvantage(int firstPlayerPoints, int secondPlayerPoints)
             => firstPlayerPoints > secondPlayerPoints && secondPlayerPoints >= 3;
+
         private static bool IsWinner(int firstPlayerPoints, int secondPlayerPoints)
             => firstPlayerPoints >= 4 && secondPlayerPoints >= 0
             && (firstPlayerPoints - secondPlayerPoints) >= 2;
